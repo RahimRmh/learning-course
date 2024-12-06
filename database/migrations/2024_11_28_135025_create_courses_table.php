@@ -19,7 +19,6 @@ return new class extends Migration
             $table->text('description');
             $table->string('thumbnail')->nullable(); 
             $table->decimal('price', 8, 2)->nullable(); 
-            $table->enum('status', ['draft', 'published', 'archived'])->default('draft');
             $table->timestamps();
 
         });
